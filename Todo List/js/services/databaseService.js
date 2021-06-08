@@ -40,7 +40,7 @@ function DatabaseService(origin)
     const updateItem = function(item)
     {
         let lista = get();
-        let novaLista = lista.foreach(function (valor, index)
+        lista.forEach(function (valor, index)
         {
             if (item.id == valor.id){
                 lista[index].nome = item.nome;
